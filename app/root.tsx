@@ -6,6 +6,13 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import type { LinksFunction } from "@remix-run/node";
+import baselineStylesHref from "@phoenix-ui/baseline/compiled/baseline.css";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: baselineStylesHref },
+];
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

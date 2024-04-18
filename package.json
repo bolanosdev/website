@@ -12,6 +12,10 @@
     "typecheck": "tsc",
     "typegen": "wrangler types"
   },
+  "workspaces": [
+    "packages/phoenix/libraries/*",
+    "packages/phoenix/components/primitives/*"
+  ],
   "dependencies": {
     "@remix-run/cloudflare": "^2.8.1",
     "@remix-run/cloudflare-pages": "^2.8.1",
@@ -37,6 +41,7 @@
     "node-fetch": "^3.3.2",
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
+    "tailwindcss": "^3.4.1",
     "vite-tsconfig-paths": "^4.2.1",
     "wrangler": "^3.48.0"
   },
@@ -44,3 +49,4 @@
     "node": ">=18.0.0"
   }
 }
+
