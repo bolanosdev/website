@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
+import { Text } from "@phoenix-ui/text";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,7 +14,9 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix (with Vite and Cloudflare)</h1>
+      <Text colors={{ text: { color: "text-teal" } }}>
+        Welcome to Remix (with Vite and Cloudflare)
+      </Text>
       <ul>
         <li>
           <a
@@ -21,7 +24,7 @@ export default function Index() {
             href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-remix-site/"
             rel="noreferrer"
           >
-            Cloudflare Pages Docs - Remix guide
+            Cloudflare Pages Docs{" "}
           </a>
         </li>
         <li>
