@@ -7,7 +7,7 @@ import {
 } from "@remix-run/react";
 
 import type { LinksFunction } from "@remix-run/node";
-import baselineStylesHref from "@phoenix-ui/baseline/compiled/baseline.css";
+import baselineStylesHref from "@phoenix-ui/baseline/compiled/baseline.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: baselineStylesHref },

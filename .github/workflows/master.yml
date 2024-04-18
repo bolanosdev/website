@@ -33,7 +33,14 @@ jobs:
 
       - run: bun run build
 
-      - uses: cloudflare/wrangler-action@v3
+      - run: ls -la
+
+      - run: ls -la ./build/client
+
+      - name: deploy
+        uses: cloudflare/pages-action@v1
         with:
+          projectName: "cf-remix"
+          directory: "./build/client"
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
