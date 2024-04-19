@@ -1,5 +1,5 @@
 {
-  "name": "my-remix-app",
+  "name": "phoenix-web",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -51,4 +51,3 @@
     "node": ">=18.0.0"
   }
 }
-
