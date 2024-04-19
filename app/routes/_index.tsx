@@ -15,7 +15,7 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <Text colors={{ text: { color: "text-teal" } }}>
-        Welcome to Remix (test deploy)
+        Welcome to Remix (test deploy 2)
       </Text>
       <ul>
         <li>
