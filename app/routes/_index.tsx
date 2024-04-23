@@ -6,7 +6,7 @@ export const meta: MetaFunction = () => {
     { title: "New Remix App" },
     {
       name: "description",
-      content: "Welcome to Remix! Using Vite and Cloudflare!",
+      content: "Welcome to BolanosDev! Using Phoenix-UI and Cloudflare!",
     },
   ];
 };
@@ -15,7 +15,7 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <Text colors={{ text: { color: "text-teal" } }}>
-        Welcome to Remix (test deploy 2)
+        Welcome to BolanosDev
       </Text>
       <ul>
         <li>

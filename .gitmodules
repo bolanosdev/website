@@ -1,3 +1,6 @@
 [submodule "packages/phoenix"]
-	path = packages/phoenix
-	url = git@github.com:bolanosdev/phoenix.git
+	path = packages/phoenix-ui
+	url = git@github.com:bolanosdev/phoenix-ui.git
+[submodule "packages/phoenix-ui"]
+	path = packages/phoenix-ui
+	url = git@github.com:bolanosdev/phoenix-ui.git

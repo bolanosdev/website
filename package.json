@@ -13,8 +13,8 @@
     "typegen": "wrangler types"
   },
   "workspaces": [
-    "packages/phoenix/libraries/*",
-    "packages/phoenix/components/primitives/*"
+    "packages/phoenix-ui/libraries/*",
+    "packages/phoenix-ui/components/primitives/*"
   ],
   "dependencies": {
     "@remix-run/cloudflare": "^2.8.1",
