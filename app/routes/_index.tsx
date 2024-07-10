@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import { Text } from "@phoenix-ui/text";
+import { Section } from "@phoenix-ui/section";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,7 +14,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <Section>
       <Text colors={{ text: { color: "text-teal" } }}>
         Welcome to BolanosDev
       </Text>
@@ -33,6 +34,6 @@ export default function Index() {
           </a>
         </li>
       </ul>
-    </div>
+    </Section>
   );
 }
