@@ -22,7 +22,7 @@ const Navigation: FC<{
             <Link
               href={link.url}
               size="text-sm"
-              colors={{ text: { color: "text-gray" } }}
+              colors={{ text: { color: "gray" } }}
             >
               {link.text}
             </Link>
@@ -33,7 +33,7 @@ const Navigation: FC<{
             <Link
               href={link.url}
               size="text-sm"
-              colors={{ text: { color: "text-slate" } }}
+              colors={{ text: { color: "slate" } }}
             >
               {link.text}
             </Link>

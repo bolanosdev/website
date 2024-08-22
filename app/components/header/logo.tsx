@@ -5,8 +5,8 @@ export const Logo: React.FunctionComponent = () => (
   <div className="logo">
     <Link
       href="/"
-      align="text-left"
-      colors={{ text: { color: "text-gray" } }}
+      align="left"
+      colors={{ text: { color: "gray" } }}
       size="text-2xl"
       weight="font-bold"
       display="block"

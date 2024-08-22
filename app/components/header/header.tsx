@@ -7,9 +7,9 @@ export const Header: FC = () => {
       <header>
         <Section
           height={{ value: "14" }}
-          colors={{ text: { color: "text-white" } }}
-          margin={{ x: "mx-auto" }}
-          padding={{ y: "py-4" }}
+          colors={{ text: { color: "gray" } }}
+          dark={{ colors: { text: { color: "white" } } }}
+          margin={{ x: "auto" }}
         >
           <Section flex={{ justifyContent: "justify-between" }}>
             <Section>Bolanos Dev</Section>
