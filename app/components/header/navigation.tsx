@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "@phoenix-ui/text";
+import { Link } from "@bennie-ui/text";
 
 type Link = { url: string; text: string };
 
@@ -21,7 +21,7 @@ const Navigation: FC<{
           <li key={i} className="inline">
             <Link
               href={link.url}
-              size="text-sm"
+              size="sm"
               colors={{ text: { color: "gray" } }}
             >
               {link.text}
@@ -32,7 +32,7 @@ const Navigation: FC<{
           <li key={i} className="inline">
             <Link
               href={link.url}
-              size="text-sm"
+              size="sm"
               colors={{ text: { color: "slate" } }}
             >
               {link.text}

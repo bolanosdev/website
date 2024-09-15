@@ -1,7 +1,5 @@
-import { ComponentProperties } from "packages/phoenix-ui/libraries/types";
-import { Text } from "@phoenix-ui/text";
-import { Button } from "@phoenix-ui/button";
-import { Section } from "@phoenix-ui/section";
+import { ComponentProperties } from "packages/bennie-ui/libraries/types";
+import { Button } from "@bennie-ui/button";
 
 export default function Examples() {
   const props: ComponentProperties = {
@@ -9,11 +7,13 @@ export default function Examples() {
     colors: {
       text: { color: "white" },
       background: { color: "red" },
+      border: { color: "teal", weight: "900" },
     },
     dark: {
       colors: {
         text: { color: "red" },
         background: { color: "white" },
+        border: { color: "rose", weight: "900" },
       },
     },
     overrides: {
@@ -22,11 +22,13 @@ export default function Examples() {
         colors: {
           text: { color: "sky" },
           background: { color: "teal" },
+          border: { color: "lime" },
         },
         dark: {
           colors: {
             text: { color: "teal" },
             background: { color: "sky" },
+            border: { color: "red" },
           },
         },
       },
@@ -35,11 +37,13 @@ export default function Examples() {
         colors: {
           text: { color: "orange" },
           background: { color: "lime" },
+          border: { color: "orange" },
         },
         dark: {
           colors: {
             text: { color: "lime" },
             background: { color: "orange" },
+            border: { color: "sky" },
           },
         },
       },
@@ -48,17 +52,7 @@ export default function Examples() {
 
   return (
     <div>
-      <Text {...props}>Text</Text>
-      <br />
-      <Button
-        action="primary"
-        {...props}
-        className="text-green-500 bg-yellow-500"
-      >
-        Button with Classes
-      </Button>
-      <br />
-      <Section {...props}>Section</Section>
+      <Button {...props}>Button with Classes</Button>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "phoenix-web",
+  "name": "bolanosdev-web",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -14,8 +14,8 @@
     "typegen": "wrangler types"
   },
   "workspaces": [
-    "packages/phoenix-ui/libraries/*",
-    "packages/phoenix-ui/components/primitives/*"
+    "packages/bennie-ui/libraries/*",
+    "packages/bennie-ui/components/primitives/*"
   ],
   "dependencies": {
     "@heroicons/react": "^2.1.3",

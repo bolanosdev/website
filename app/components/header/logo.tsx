@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Link } from "@phoenix-ui/text";
+import { Text, Link } from "@bennie-ui/text";
 
 export const Logo: React.FunctionComponent = () => (
   <div className="logo">
@@ -7,8 +7,8 @@ export const Logo: React.FunctionComponent = () => (
       href="/"
       align="left"
       colors={{ text: { color: "gray" } }}
-      size="text-2xl"
-      weight="font-bold"
+      size="2xl"
+      weight="bold"
       display="block"
     >
       Bolanos Dev

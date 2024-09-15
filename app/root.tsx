@@ -7,9 +7,10 @@ import {
 } from "@remix-run/react";
 
 import type { LinksFunction } from "@remix-run/node";
-import { Section } from "@phoenix-ui/section";
+import { Section } from "@bennie-ui/section";
+import baselineStylesHref from "@bennie-ui/baseline/compiled/baseline.css?url";
 import { Header } from "./components/header";
-import baselineStylesHref from "@phoenix-ui/baseline/compiled/baseline.css?url";
+import { main_styles } from "./app.styles";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: baselineStylesHref },
@@ -25,13 +26,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="w-full h-full dark:bg-gray-800 ">
-        <Section
-          className="w-2/3 flex flex-col"
-          margin={{ x: "auto" }}
-          colors={{ text: { color: "gray" } }}
-          dark={{ colors: { text: { color: "white" } } }}
-        >
+      <body className="w-full h-full bg-white dark:bg-gray-800">
+        <Section {...main_styles}>
           <Header />
           <Section id="main-content">{children}</Section>
         </Section>

@@ -1,20 +1,29 @@
 import { FC } from "react";
-import { Section } from "packages/phoenix-ui/components/primitives/section/src";
+import { Icon } from "@bennie-ui/icons";
+import { Button } from "@bennie-ui/button";
+import { Section } from "@bennie-ui/section";
 
+import { header_styles } from "./header.styles";
 export const Header: FC = () => {
   return (
     <div className="header-wrapper">
       <header>
-        <Section
-          height={{ value: "14" }}
-          colors={{ text: { color: "gray" } }}
-          dark={{ colors: { text: { color: "white" } } }}
-          margin={{ x: "auto" }}
-        >
-          <Section flex={{ justifyContent: "justify-between" }}>
-            <Section>Bolanos Dev</Section>
-            <Section>Middle</Section>
-            <Section>Right</Section>
+        <Section {...header_styles.container}>
+          <Section flex={{ justifyContent: "start", alignItems: "center" }}>
+            <Section size="2xl">Bolanos Dev</Section>
+          </Section>
+          <Section>
+            <Button
+              onClick={() => {
+                alert("user profile");
+              }}
+            >
+              <Icon
+                figure="UserIcon"
+                colors={{ text: { color: "black" } }}
+                dark={{ colors: { text: { color: "white" } } }}
+              />
+            </Button>
           </Section>
         </Section>
       </header>
